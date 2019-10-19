@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -eo pipefail
+
+version=$1
+
+cd /tmp
+
+sudo apt-get install gprolog=$version
