@@ -7,4 +7,9 @@ version=$1
 cd /tmp
 
 sudo apt-get update
-sudo apt-get install gprolog
+if [ "$version" == "latest" ] ; then
+	sudo apt-get install gprolog
+else
+	sudo apt-get install gprolog="$version"
+fi
+
