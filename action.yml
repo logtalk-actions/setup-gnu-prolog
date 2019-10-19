@@ -1,0 +1,10 @@
+name: Setup GNU Prolog
+description: Installs the specified GNU Prolog version
+inputs:
+  gprolog-version:
+    description: GNU Prolog version to install
+    required: true
+    default: latest
+runs:
+  using: 'node12'
+  main: 'src/setup-gprolog.js'
