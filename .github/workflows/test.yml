@@ -1,0 +1,17 @@
+name: Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating-system: [ubuntu-latest]
+    steps:
+      - name: Install GNU Prolog
+        uses: logtalk-actions/setup-gnu-prolog@master
+        with:
+          gprolog-version: latest
+      - name: Run trivial sanity test
+        run: gprolog --query-goal true --query-goal halt

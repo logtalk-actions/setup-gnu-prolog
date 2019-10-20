@@ -2,6 +2,8 @@
 
 This actions sets up a GNU Prolog environment for use in workflows.
 
+![](https://github.com/logtalk-actions/setup-gnu-prolog/workflows/Test/badge.svg)
+
 # Usage
 
 See [action.yml](action.yml).
