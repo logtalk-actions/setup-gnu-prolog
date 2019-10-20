@@ -1,5 +1,4 @@
 const core = require('@actions/core')
-const {exec} = require('@actions/exec')
 const {installGProlog} = require('./installer')
 
 main().catch(err => {
