@@ -18,13 +18,13 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
       - uses: logtalk-actions/setup-gnu-prolog@master
         with:
-          gprolog-version: 1.4.5
+          gprolog-version: latest
       - uses: logtalk-actions/setup-logtalk@master
         with:
-          logtalk-version: 3.31.0
+          logtalk-version: latest
+      - uses: actions/checkout@v1
 ```
 
 # License
@@ -33,4 +33,4 @@ The scripts and documentation in this project are released under the [Apache Lic
 
 # Current Status
 
-This action is in active development.
+This action is in active development. This action only supports Linux at this time.
