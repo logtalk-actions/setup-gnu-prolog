@@ -1,0 +1,21 @@
+name: Logtalk
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating-system: [ubuntu-latest]
+    steps:
+      - name: Install GNU Prolog
+        uses: logtalk-actions/setup-gnu-prolog@master
+        with:
+          gprolog-version: latest
+      - name: Install Logtalk
+        uses: logtalk-actions/setup-logtalk@master
+        with:
+          logtalk-version: latest
+      - name: Run Logtalk aliases example tests
+        run: gplgt --query-goal "{aliases(tester)}" --query-goal halt
