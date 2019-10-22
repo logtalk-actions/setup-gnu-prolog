@@ -33,4 +33,4 @@ The scripts and documentation in this project are released under the [Apache Lic
 
 # Current Status
 
-This action is in active development. This action only supports Linux at this time.
+This action is in active development. This action does not support Windows at this time.

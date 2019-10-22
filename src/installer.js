@@ -4,7 +4,7 @@ const path = require('path')
 module.exports = {installGProlog}
 
 /**
- * Install Logtalk.
+ * Install GNU Prolog.
  *
  * @param {string} version
  */

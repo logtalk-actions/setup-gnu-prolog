@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -eo pipefail
+
+version=$1
+file=gprolog-$version.pkg.zip
+
+cd /tmp
+
+if [ "$version" == "latest" ] ; then
+	sudo brew info gnu-prolog
+else
+	sudo brew info gnu-prolog@$version
+fi
