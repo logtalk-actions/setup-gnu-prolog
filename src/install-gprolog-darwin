@@ -8,8 +8,7 @@ file=gprolog-$version.pkg.zip
 cd /tmp
 
 if [ "$version" == "latest" ] ; then
-	brew info gnu-prolog
+	brew install gnu-prolog
 else
-	brew info gnu-prolog@$version
+	brew install gnu-prolog@$version
 fi
-echo $PATH
