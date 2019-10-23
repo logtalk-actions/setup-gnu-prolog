@@ -16,8 +16,8 @@ async function main() {
 }
 
 function checkPlatform() {
-  if (process.platform !== 'linux')
+  if (process.platform == 'win32')
     throw new Error(
-      '@logtalk-actions/setup-gprolog only supports Ubuntu Linux at this time'
+      '@logtalk-actions/setup-gprolog does not support Windows at this time'
     )
 }
