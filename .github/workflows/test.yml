@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.operating-system }}
     strategy:
       matrix:
-        operating-system: [ubuntu-latest]
+        operating-system: [ubuntu-latest, macOS-latest]
     steps:
       - name: Install GNU Prolog
         uses: logtalk-actions/setup-gnu-prolog@master
@@ -15,3 +15,9 @@ jobs:
           gprolog-version: latest
       - name: Run trivial sanity test
         run: gprolog --query-goal true --query-goal halt
+      - name: Install Logtalk
+        uses: logtalk-actions/setup-logtalk@master
+        with:
+          logtalk-version: latest
+      - name: Run Logtalk aliases example tests
+        run: cd ~/logtalk/examples/aliases && logtalk_tester -p gnu
