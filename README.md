@@ -15,7 +15,7 @@ on: push
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
     steps:
       - name: Install GNU Prolog backend
         uses: logtalk-actions/setup-gnu-prolog@master
@@ -27,6 +27,8 @@ jobs:
           logtalk-version: latest
       - name: Checkout Logtalk application to be tested
         uses: actions/checkout@v1
+      - name: Run all tests in the application directory
+        run: logtalk_tester -p gnu
 ```
 
 # License
