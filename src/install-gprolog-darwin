@@ -12,3 +12,4 @@ if [ "$version" == "latest" ] ; then
 else
 	brew info gnu-prolog@$version
 fi
+echo $PATH
