@@ -1,14 +1,14 @@
-# setup-gnu-prolog
+# `setup-gnu-prolog`
 
 This actions sets up a GNU Prolog environment for use in workflows.
 
 ![](https://github.com/logtalk-actions/setup-gnu-prolog/workflows/Test/badge.svg)
 
-# Usage
+## Usage
 
 See [action.yml](action.yml).
 
-# Example
+## Example
 
 ```yml
 on: push
@@ -31,10 +31,10 @@ jobs:
         run: logtalk_tester -p gnu
 ```
 
-# License
+## License
 
 This project is released under the [Apache License 2.0](LICENSE).
 
-# Current Status
+## Current Status
 
 This action is in active development. This action only supports macOS at this time (the Ubuntu package is broken).
