@@ -12,7 +12,7 @@ jobs:
       - name: Install GNU Prolog
         uses: logtalk-actions/setup-gnu-prolog@master
         with:
-          gprolog-version: latest
+          gnu-prolog-version: latest
       - name: Run trivial sanity test
         run: gprolog --query-goal true --query-goal halt
       - name: Install Logtalk
