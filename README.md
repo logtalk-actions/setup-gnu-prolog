@@ -6,7 +6,7 @@ This actions sets up a GNU Prolog environment for use in workflows.
 
 ## Usage
 
-See [action.yml](action.yml).
+See [action.yml](action.yml) for the action metadata. The required `gnu-prolog-version` input parameter specifies the version to be installed (`latest` or version number, e.g. `1.4.5`; default is `latest`).
 
 ## Example
 
