@@ -16,7 +16,7 @@ async function main() {
 }
 
 function checkPlatform() {
-  if (process.platform !== 'win32')
+  if (process.platform == 'win32')
     throw new Error(
       '@logtalk-actions/setup-gnu-prolog does not support Windows at this time.'
     )
