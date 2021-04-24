@@ -41,4 +41,4 @@ This project is released under the [Apache License 2.0](LICENSE).
 
 ## Current Status
 
-This action is in active development. This action only supports macOS at this time (the Ubuntu package is broken).
+This action is in active development. This action does not support Windows at this time. When using Ubuntu, be sure to use version 20.04 or later as the GNU Prolog package available for 18.04 is broken.

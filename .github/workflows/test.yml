@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.operating-system }}
     strategy:
       matrix:
-        operating-system: [macOS-latest]
+        operating-system: [macOS-latest, ubuntu-latest]
     steps:
       - name: Install GNU Prolog
         uses: logtalk-actions/setup-gnu-prolog@master
