@@ -16,8 +16,8 @@ async function main() {
 }
 
 function checkPlatform() {
-  if (process.platform !== 'darwin')
+  if (process.platform !== 'win32')
     throw new Error(
-      '@logtalk-actions/setup-gnu-prolog only supports macOS at this time'
+      '@logtalk-actions/setup-gnu-prolog does not support Windows at this time.'
     )
 }
