@@ -3,7 +3,6 @@
 set -eo pipefail
 
 version=$1
-file=gprolog-$version.pkg.zip
 
 cd /tmp
 
